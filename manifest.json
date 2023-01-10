@@ -1,0 +1,28 @@
+{
+    "name": "YouTube theme",
+    "deskription": "YouTube",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "https://www.youtube.com/"
+    ],
+    "background": {
+            "scripts": ["background.js"],
+            "persistent": false
+    },
+    "content": {
+        "scripts": [
+            "content.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts":
+    [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "css": ["myStyles.css"]
+        }
+    ],
+    "manifest_version": 2
+}
