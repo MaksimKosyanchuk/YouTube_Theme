@@ -21,7 +21,8 @@
     [
         {
             "matches": ["https://www.youtube.com/*"],
-            "css": ["myStyles.css"]
+            "css": ["myStyles.css"],
+            "js": ["content.js"]
         }
     ],
     "manifest_version": 2

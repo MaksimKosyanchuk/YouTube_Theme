@@ -96,3 +96,6 @@ yt-confirm-dialog-renderer[dialog][dialog][dialog] {
 yt-report-form-modal-renderer[dialog][dialog][dialog] {
     background-color: rgba(50,50,50, 65%) !important;
 }
+.sbfl_a:hover {
+    color: rgba(200,200,200, .8) !important;
+}
