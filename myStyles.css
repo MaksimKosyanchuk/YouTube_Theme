@@ -3,7 +3,7 @@ html[system-icons][dark], html[system-icons] [dark] {
     --yt-spec-icon-disabled: #717171;
     --yt-spec-brand-icon-inactive: #fff;
     background-color: rgb(0 0 0 / 65%) !important;
-    backdrop-filter: blur(17px) !important;
+    backdrop-filter: blur(30px) !important;
 }
 ytd-app[darker-dark-theme] #guide-content.ytd-app {
     background: rgba(0,0,0,45%) !important;
@@ -51,6 +51,7 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
 .ytp-popup {
     background: rgba(50, 50, 50, 0.65) !important;
     backdrop-filter: blur(20px) !important;
+    border-radius: 12px !important;
 }
 html[system-icons][dark] {
     background-color: rgba(50,50,50, 0.65) !important;
@@ -95,4 +96,19 @@ yt-confirm-dialog-renderer[dialog][dialog][dialog] {
 }
 yt-report-form-modal-renderer[dialog][dialog][dialog] {
     background-color: rgba(50,50,50, 65%) !important;
+}
+.sbfl_a:hover {
+    color: rgba(200,200,200, .8) !important;
+}
+.gsfs {
+    color: var(--yt-spec-text-primary) !important;
+}
+ytd-masthead[darker-dark-theme] #background.ytd-masthead {
+    background: rgba(0,0,0,0) !important;
+}
+.sbsb_d {
+    background: rgba(100, 100, 100, .3) !important;
+}
+.yt-simple-endpoint.yt-search-history-entry-renderer .yt-icon-container {
+    color: white !important;
 }
