@@ -1,39 +1,44 @@
+:root {
+    --blur-power: blur(20px);
+    --background-power: rgba(0,0,0, .45)
+}
+
 html[system-icons][dark], html[system-icons] [dark] {
     --yt-spec-icon-inactive: #fff;
     --yt-spec-icon-disabled: #717171;
     --yt-spec-brand-icon-inactive: #fff;
     background-color: rgb(0 0 0 / 65%) !important;
-    backdrop-filter: blur(17px) !important;
 }
 ytd-app[darker-dark-theme] #guide-content.ytd-app {
     background: rgba(0,0,0,45%) !important;
-    backdrop-filter: blur(17px) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 ytd-app[darker-dark-theme] {
     --app-drawer-content-container-background-color: rgba(255, 255, 255, 0) !important;
 }
 #container.ytd-searchbox {
-    background-color: rgb(0 0 0 / 41%) !important;
+    background-color: var(--background-power) !important;
 }
 ytd-searchbox[desktop-searchbar-style=rounded_corner_borders_light_btn] #search-icon-legacy.ytd-searchbox {
-    background-color: rgb(0 0 0 / 41%) !important;
+    background-color: var(--background-power) !important;
 }
 html[dark], [dark] {
-    --yt-spec-general-background-a: #00000041 !important;
-    --yt-spec-menu-background: rgba(0,0,0, 0.65) !important;
+    --yt-spec-general-background-a: var(--background-power) !important;
+    --yt-spec-menu-background: var(--background-power) !important;
 }
 ytd-feed-filter-chip-bar-renderer[darker-dark-theme] #chips-wrapper.ytd-feed-filter-chip-bar-renderer {
-    backdrop-filter: blur(17px) !important;
-    background-color: rgba(0,0,0,65%) !important;
+    backdrop-filter: var(--blur-power) !important;
+    background-color: var(--background-power) !important;
     border-top: 1px solid rgb(255 255 255 / 12%) !important;
     border-bottom: 1px solid rgb(255 255 255 / 12%) !important;
 }
 ytd-multi-page-menu-renderer {
     background: rgba(0,0,0,0) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 ytd-multi-page-menu-renderer[darker-dark-theme] {
-    background: rgba(0 0 0 / 65%) !important;
-    backdrop-filter: blur(20px) !important;
+    background: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 ytd-simple-menu-header-renderer[darker-dark-theme] {
     background-color: rgba(0,0,0,0) !important;
@@ -45,30 +50,31 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 1px solid rgb(94, 94, 94) !important;
 }
 .iv-drawer {
-    background-color: rgba(0,0,0 65%);
-    backdrop-filter: blur(20px);
+    background-color: var(--background-power);
+    backdrop-filter: var(--blur-power);
 }
 .ytp-popup {
-    background: rgba(50, 50, 50, 0.65) !important;
-    backdrop-filter: blur(20px) !important;
+    border-radius: 12px !important;
+    background: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 html[system-icons][dark] {
-    background-color: rgba(50,50,50, 0.65) !important;
+    background-color: var(--background-power) !important;
 }
 ytd-menu-popup-renderer[sheets-refresh] tp-yt-paper-listbox.ytd-menu-popup-renderer {
     background: rgba(50,50,50, 0%) !important;
-    backdrop-filter: blur(20px) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 .sbsb_a {
-    background: rgba(50,50,50, 0.65) !important;
-    backdrop-filter: blur(20px) !important;
+    background: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 .sbdd_b {
     background: rgba(0,0,0,0) !important;
     border: 1px solid #ccc0 !important;
 }
 .sbsb_c:hover{
-    background-color: rgba(100,100,100, 0.3) !important;
+    background-color: var(--background-power) !important;
 }
 .sbfl_b {
     background: rgba(0,0,0,0) !important;
@@ -83,16 +89,27 @@ ytd-menu-popup-renderer[sheets-refresh] tp-yt-paper-listbox.ytd-menu-popup-rende
     color: var(--yt-spec-text-primary);
 }
 #contentWrapper.tp-yt-iron-dropdown > * {
-    background-color: rgba(50, 50, 50, 65%) !important;
+    background-color: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 tp-yt-paper-dialog[modern] {
-    background: rgba(50,50,50, 65%) !important;
-    backdrop-filter: blur(20px) !important;
+    background: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 yt-confirm-dialog-renderer[dialog][dialog][dialog] {
-    background-color: rgba(50,50,50, 65%) !important;
-    backdrop-filter: blur(20px) m !important;
+    background-color: var(--background-power) !important;
+    backdrop-filter: var(--blur-power) !important;
 }
 yt-report-form-modal-renderer[dialog][dialog][dialog] {
-    background-color: rgba(50,50,50, 65%) !important;
+    background-color: var(--background-power)  !important;
+}
+#header.ytd-rich-grid-renderer {
+    display: none !important;
+}
+#background.ytd-masthead {
+    background-color: var(--background-power) !important;
+    backdrop-filter: var(--blur-power);
+}
+ytd-c4-tabbed-header-renderer.grid-6-columns tp-yt-paper-tabs.ytd-c4-tabbed-header-renderer, ytd-c4-tabbed-header-renderer.grid-6-columns .page-header-banner.ytd-c4-tabbed-header-renderer {
+    margin-top: 30px !important;
 }
